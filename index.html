@@ -5,53 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KWEB Survey Page</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h3>KWEB Survey Page</h3>
-    <a href="https://kwebofficial.com/">
-      <img src="./KWEB_Logo.png" width="300" /><br />
-      KWEB Homepage</a
-    >
-    <ol>
-      <li>
-        <div>Write your name.</div>
-        <div>
-          <input type="text" />
-        </div>
-      </li>
-      <li>
-        <div>Write your student number.</div>
-        <div>
-          <input type="text" />
-        </div>
-      </li>
-      <li>
-        <div>Select your number level.</div>
-        <div>
-          <input type="radio" name="member-level" />Admin
-          <input type="radio" name="member-level" />Intern
-          <input type="radio" name="member-level" />Qualified
-        </div>
-      </li>
-      <li>
-        <div>Select all fields you are interested in.</div>
-        <div>
-          <span><input type="checkbox" name="fields" />Front-end</span>
-          <span><input type="checkbox" name="fields" />Back-end</span>
-          <span><input type="checkbox" name="fields" />Web crawling</span>
-          <span><input type="checkbox" name="fields" />Web security</span>
-          <span
-            ><input type="checkbox" name="fields" />Etcetera <input type="text"
-          /></span>
-        </div>
-      </li>
-      <li>
-        <div>
-          Give us your overall evaluation and feedback about the previous study.
-        </div>
-        <textarea rows="20" cols="60"></textarea>
-      </li>
-    </ol>
-    <input type="button" value="Submit your answers" />
+    <h3 id="pageTitle">KWEB Survey Page</h3>
+    <nav id="navBar">
+      <a href="https://kwebofficial.com/">
+        <img src="./KWEB_Logo.png" width="300" /><br />
+        <span id="navText">KWEB Homepage</span></a
+      >
+    </nav>
+    <form id="questionForm">
+      <ol id="questionList">
+        <li id="nameQuestion">
+          <p class="question-content">Write your name.</p>
+          <p class="question-response">
+            <input type="text" />
+          </p>
+        </li>
+        <li id="studentNumberQuestion">
+          <p class="question-content">Write your student number.</p>
+          <p class="question-response">
+            <input type="text" />
+          </p>
+        </li>
+        <li id="levelQuestion">
+          <p class="question-content">Select your member level.</p>
+          <p class="question-response">
+            <span id="memberLevelResponse">
+              <input type="radio" name="member-level" value="admin" />Admin
+              <input type="radio" name="member-level" value="intern" />Intern
+              <input
+                type="radio"
+                name="member-level"
+                value="qualified"
+              />Qualified
+            </span>
+          </p>
+        </li>
+        <li id="fieldsQuestion">
+          <p class="question-content">
+            Select all fields you are interested in.
+          </p>
+          <p class="question-response">
+            <span
+              ><input
+                type="checkbox"
+                name="fields"
+                value="Front-end"
+              />Front-end</span
+            >
+            <span
+              ><input
+                type="checkbox"
+                name="fields"
+                value="Back-end"
+              />Back-end</span
+            >
+            <span
+              ><input type="checkbox" name="fields" value="Web crawling" />Web
+              crawling</span
+            >
+            <span
+              ><input type="checkbox" name="fields" value="Web security" />Web
+              security</span
+            >
+            <span
+              ><input type="checkbox" name="fields" />Etcetera
+              <input type="text"
+            /></span>
+          </p>
+        </li>
+        <li id="evaluationQuestion">
+          <p class="question-content">
+            Give us your overall evaluation and feedback about the previous
+            study.
+          </p>
+          <p class="question-response">
+            <textarea rows="20" cols="80"></textarea>
+          </p>
+        </li>
+      </ol>
+      <input type="submit" value="Submit your answers" id="submitButton" />
+    </form>
   </body>
 </html>
