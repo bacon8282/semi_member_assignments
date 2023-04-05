@@ -4,42 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>KWEB Survey Page</title>
   </head>
   <body>
     <h3>KWEB Survey Page</h3>
-    <img src="https://i.imgur.com/hSSFVSw.png" />
-    <a href="https://kwebofficial.com/">KWEB Homepage</a>
+    <a href="https://kwebofficial.com/">
+      <img src="./KWEB_Logo.png" width="300" /><br />
+      KWEB Homepage</a
+    >
     <ol>
       <li>
         <div>Write your name.</div>
-        <input type="text" />
+        <div>
+          <input type="text" />
+        </div>
       </li>
       <li>
         <div>Write your student number.</div>
-        <input type="text" />
+        <div>
+          <input type="text" />
+        </div>
       </li>
       <li>
         <div>Select your number level.</div>
-        <input type="radio" name="member-level" />Admin
-        <input type="radio" name="member-level" />Intern
-        <input type="radio" name="member-level" />Qualified
+        <div>
+          <input type="radio" name="member-level" />Admin
+          <input type="radio" name="member-level" />Intern
+          <input type="radio" name="member-level" />Qualified
+        </div>
       </li>
       <li>
         <div>Select all fields you are interested in.</div>
-        <span><input type="checkbox" name="fields" />Front-end</span>
-        <span><input type="checkbox" name="fields" />Back-end</span>
-        <span><input type="checkbox" name="fields" />Web crawling</span>
-        <span><input type="checkbox" name="fields" />Web security</span>
-        <span
-          ><input type="checkbox" name="fields" />Etcetera <input type="text"
-        /></span>
+        <div>
+          <span><input type="checkbox" name="fields" />Front-end</span>
+          <span><input type="checkbox" name="fields" />Back-end</span>
+          <span><input type="checkbox" name="fields" />Web crawling</span>
+          <span><input type="checkbox" name="fields" />Web security</span>
+          <span
+            ><input type="checkbox" name="fields" />Etcetera <input type="text"
+          /></span>
+        </div>
       </li>
       <li>
         <div>
           Give us your overall evaluation and feedback about the previous study.
         </div>
-        <textarea></textarea>
+        <textarea rows="20" cols="60"></textarea>
       </li>
     </ol>
     <input type="button" value="Submit your answers" />
