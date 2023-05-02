@@ -1,0 +1,26 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  font-size: large;
+}
+
+.numbers {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border: 0.5px solid black;
+  border-radius: 50%;
+  background-color: rgb(230, 136, 136);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
